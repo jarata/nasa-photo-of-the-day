@@ -1,13 +1,14 @@
 import React from "react";
 import "./App.css";
+import ContentContainer from "./components/content/ContentContainer";
+import Image from "./components/image/Image";
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      App
+      <Image />
+      <ContentContainer/>
     </div>
   );
 }
