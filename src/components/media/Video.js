@@ -4,7 +4,7 @@ const Video = (props) => {
 	console.log("Video:", props)
 	return (
 		<div>
-			Video
+			<iframe src={props.video} width="960" height="540" title="NASA APOD Video" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen/>
 		</div>
 	)
 }
