@@ -1,11 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 
 const Image = (props) => {
-	console.log("Image:", props)
+	const [hd, setHd] = useState(false);
 	return (
-		<div>
+		<div onClick={() => setHd(!hd)}>
 			Image
-			<img src={props.nasaPics[0]} alt="NASA Astronomy Pic of the Day" />
+			{hd === false ? <img src={props.nasaPics[0]} alt="Test1" /> : <img src={props.nasaPics[1]} alt="Test2" /> }
 		</div>
 	)
 }
