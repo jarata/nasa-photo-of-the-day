@@ -1,11 +1,15 @@
 import React, { useState } from "react"
 
 const Image = (props) => {
-	console.log("Image:", props)
-	const [hd, setHd] = useState(false);
+	// console.log("Image:", props)
 	return (
 		<div>
-			<img src={hd === false ? props.image : props.hdimage} alt="Test" onClick={() => setHd(!hd)}/>
+			<img
+				src={props.image}
+				alt="See Explanation. Clicking on the picture will open
+				the highest resolution version available in a new window."
+				onClick={() => window.open(props.hdimage)}
+			/>
 		</div>
 	)
 }
