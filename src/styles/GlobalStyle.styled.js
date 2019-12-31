@@ -1,19 +1,5 @@
 import styled from 'styled-components'
 
-// Variables
-
-
-// Media Queries
-const size = {
-	a: '320px',
-	b: '360px',
-	c: '411px',
-	d: '375px',
-	e: '414px',
-	f: '768px',
-	g: '1024px'
-};
-
 // App
 export const AppDiv = styled.div`
 	text-align: center;
@@ -39,7 +25,7 @@ export const Input = styled.input`
 
 // Media
 export const MediaDiv = styled.div`
-  border: 1px solid red;
+  margin: 2%;
 `;
 
 export const Img = styled.img`
@@ -54,9 +40,6 @@ export const ContDiv = styled.div`
 	background: lightslategray;
 	border-radius: 10px;
 	box-shadow: 5px 5px 4px 2px;
-	@media (max-width: 768px) {
-	box-shadow: none;
-	}
 `;
 
 export const ContP = styled.p`
@@ -67,4 +50,5 @@ export const ContP = styled.p`
 
 export const ContSpan = styled.span`
 	font-weight: bold;
+	margin-right: 5px;
 `;
