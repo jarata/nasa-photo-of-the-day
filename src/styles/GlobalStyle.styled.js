@@ -5,6 +5,7 @@ export const AppDiv = styled.div`
 	text-align: center;
 	background: lightsteelblue;
 	padding: 2%;
+	min-height: 92.5vh;
 `;
 
 // Date
