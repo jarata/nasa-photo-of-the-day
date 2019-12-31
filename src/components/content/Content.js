@@ -1,16 +1,15 @@
 import React from 'react';
-import { ContP } from "./Content.styled";
+import { ContP, ContSpan } from "../../styles/GlobalStyle.styled";
 
 const Content = (props) => {
-	console.log("Content:", props)
+	// console.log("Content:", props);
 	return (
 		<div>
-			<ContP aria-label="date">{props.date}</ContP>
-			<ContP aria-label="title">{props.title}</ContP>
-			<ContP aria-label="explanation">{props.explanation}</ContP>
-			<ContP aria-label="copyright">{props.copyright}</ContP>
+			<ContP aria-label="date"><ContSpan>{props.date}</ContSpan></ContP>
+			<ContP aria-label="title"><ContSpan>{props.title}</ContSpan></ContP>
+			<ContP aria-label="explanation"><ContSpan>Explanation:</ContSpan>{props.explanation}</ContP>
+			{props.copyright === undefined ? <div style={{display: "none"}}/> : <ContP><ContSpan>Image Credit & Copyright:</ContSpan>{props.copyright}</ContP>}
 		</div>
 	)
-}
-
+};
 export default Content;

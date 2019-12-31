@@ -1,9 +1,9 @@
 import React from "react"
 import Content from "./Content";
-import {ContDiv} from "./Content.styled";
+import { ContDiv } from "../../styles/GlobalStyle.styled";
 
 const ContentContainer = (props) => {
-	console.log("ContentContainer:", props)
+	// console.log("ContentContainer:", props)
 	return (
 		<ContDiv>
 			<Content
@@ -14,6 +14,5 @@ const ContentContainer = (props) => {
 			/>
 		</ContDiv>
 	)
-}
-
+};
 export default ContentContainer;
