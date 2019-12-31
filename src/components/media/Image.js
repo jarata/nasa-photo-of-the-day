@@ -1,10 +1,11 @@
 import React, { useState } from "react"
+import { Img } from "../../styles/GlobalStyle.styled";
 
 const Image = (props) => {
 	// console.log("Image:", props)
 	return (
 		<div>
-			<img
+			<Img
 				src={props.image}
 				alt="See Explanation. Clicking on the picture will open
 				the highest resolution version available in a new window."
@@ -12,6 +13,6 @@ const Image = (props) => {
 			/>
 		</div>
 	)
-}
+};
 
 export default Image;
