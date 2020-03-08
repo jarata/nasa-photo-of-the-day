@@ -1,8 +1,7 @@
-import React, { useState } from "react"
+import React from "react"
 import { Img } from "../../styles/GlobalStyle.styled";
 
 const Image = (props) => {
-	// console.log("Image:", props)
 	return (
 		<div>
 			<Img

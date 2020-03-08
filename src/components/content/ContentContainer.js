@@ -3,7 +3,6 @@ import Content from "./Content";
 import { ContDiv } from "../../styles/GlobalStyle.styled";
 
 const ContentContainer = (props) => {
-	// console.log("ContentContainer:", props)
 	return (
 		<ContDiv>
 			<Content

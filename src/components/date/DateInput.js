@@ -2,7 +2,6 @@ import React from 'react';
 import { InputDiv, Input } from "../../styles/GlobalStyle.styled";
 
 const DateInput = (props) => {
-	// console.log("DateInput:", props);
 	let currDate = new Date().toISOString().split("T")[0];
 	return (
 		<InputDiv>

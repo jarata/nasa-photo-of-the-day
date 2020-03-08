@@ -2,7 +2,6 @@ import React from 'react';
 import { ContP, ContSpan } from "../../styles/GlobalStyle.styled";
 
 const Content = (props) => {
-	// console.log("Content:", props);
 	return (
 		<div>
 			<ContP aria-label="date"><ContSpan>{props.date}</ContSpan></ContP>
